@@ -92,7 +92,7 @@
                             class="form-control"
                             v-model="selectedPriority">
                         <option
-                                v-for="priority in priorities"
+                                v-for="(priority, index) in priorities" :key="index"
                                 >{{ priority }}</option>
                     </select>
                 </div>
